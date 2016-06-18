@@ -4,7 +4,7 @@ body:after {
   clear: both; }
 
 body {
-  background: red;
+  background: #fff;
   color: #333;
   font: 10px/1.1 Tahoma, helvetica, sans-serif;
   height: 100vh;
