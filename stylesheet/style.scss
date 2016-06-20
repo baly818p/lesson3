@@ -3,6 +3,7 @@
 @import "utils/mixins";
 @import "utils/extends";
 // - layout
-@import "layout/header";
+@import "layout/_header.scss";
 
-
+// - pages
+@import "pages/_up-home.scss";
