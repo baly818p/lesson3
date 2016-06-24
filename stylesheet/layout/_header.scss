@@ -1,16 +1,24 @@
-body{
-	background: #fff;
-	color: $textColor;
-	font: 10px/1.1 $family;
-	height: 100vh;
-	@include anim($dur: .3s);
-	@include anim-param(background, opacity);
-	@include bp($tablet){
-		background: red;
-	}
-	@extend %layout;
+header{
+	background: #e8ebf1;
+	padding: 26px 0;
 }
-body:hover{
-	background: black;
-	opacity: 0.4;
+header .container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo{
+	font-family: 'latoregular', sans-serif;
+	font-size: 3.85em;
+	color:#2aacc8;
+	margin: 0 0 14px;
+	span{
+		color:#000;
+		font-family: 'latoblack', sans-serif;
+	}
 }

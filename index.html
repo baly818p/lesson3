@@ -3,19 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+	<script defer  src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script defer src="js/jquery.bxslider.min.js"></script>
+	<script defer src="js/index.js"></script>
 	<title>BisLite</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
 			<div class="container">
-				<a href="#"><img src="" alt=""></a>
-				<na>
-					<ul>
+				<a class="logo" href="#"><span>Bis</span>Lite</a>
+				<nav>
+					<ul class="nav-menu">
 						<li><a href="#">Home</a></li>
 						<li><a href="#">About us</a></li>
-						<li><a href="#">Services</a>
-							<ul>
+						<li class="uldown"><a href="#">Services</a>
+							<ul class="dropdown">
 								<li><a href="#">Web Design</a></li>
 								<li><a href="#">Wordpress Design</a></li>
 								<li><a href="#">Mobile App Development</a></li>
@@ -27,127 +31,225 @@
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Contact Us</a></li>
 					</ul>
-				</na>
+				</nav>
 			</div>
 		</header>
-		<div class="slider-main container">
-			<ul>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-			</ul>
+		<div class="slider-main">
+			<div class="container">
+				<ul class="bxslider">
+					<li>
+						<div class="image-holder">
+							<img src="images/galery-bg.jpg"  alt=""  width="1000"  height="440">
+						</div>
+						<div class="text-holder">
+							<p>We design clean, crisp & memorable icons1</p>
+						</div>
+					</li>
+					<li>
+						<div class="image-holder">
+							<img src="images/galery-bg.jpg"  alt=""  width="1000"  height="440">
+						</div>
+						<div class="text-holder">
+							<p>We design clean, crisp & memorable icons2</p>
+						</div>
+					</li>
+					<li>
+						<div class="image-holder">
+							<img src="images/galery-bg.jpg"  alt=""  width="1000"  height="440">
+						</div>
+						<div class="text-holder">
+							<p>We design clean, crisp & memorable icons3</p>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="benefits">
 			<div class="container">
 				<ul>
 					<li>
-						<h3 class="title">Clean theme</h3>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero veniam, voluptas recusandae earum excepturi explicabo unde doloribus perspiciatis rem sunt? Nemo, sed deleniti! Porro minus, officiis consequatur reprehenderit et.</p>
+						<h3 class="theme"><span></span>Clean theme</h3>
+						<p class="description">Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
+						<a href="#">Read More</a>
 					</li>
 					<li>
-						<h3 class="title">Responsive design</h3>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero veniam, voluptas recusandae earum excepturi explicabo unde doloribus perspiciatis rem sunt? Nemo, sed deleniti! Porro minus, officiis consequatur reprehenderit et.</p>
+						<h3 class="design"><span></span>Responsive design</h3>
+						<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros.</p>
+						<a href="#">Read More</a>
 					</li>
 					<li>
-						<h3 class="title">Fully Layered PSD</h3>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero veniam, voluptas recusandae earum excepturi explicabo unde doloribus perspiciatis rem sunt? Nemo, sed deleniti! Porro minus, officiis consequatur reprehenderit et.</p>
+						<h3 class="layer"><span></span>Fully Layered PSD</h3>
+						<p class="description">Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna.</p>
+						<a href="#">Read More</a>
 					</li>
 					<li>
-						<h3 class="title">Ready for coding</h3>
-						<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam libero veniam, voluptas recusandae earum excepturi explicabo unde doloribus perspiciatis rem sunt? Nemo, sed deleniti! Porro minus, officiis consequatur reprehenderit et.</p>
+						<h3 class="coding"><span></span>Ready for coding</h3>
+						<p class="description">Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna. </p>
+						<a href="#">Read More</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="works container">
-			<h2 class="title">Latest Works</h2>
-			<ul class="works-slider">
-				<li><a href=""><img src="" alt=""></a></li>
-				<li><a href=""><img src="" alt=""></a></li>
-				<li><a href=""><img src="" alt=""></a></li>
-				<li><a href=""><img src="" alt=""></a></li>
-			</ul>
+			<h3 class="title">Latest Works</h3>
+			<div class="slider2">
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img01.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+			 	<div class="slide">
+					<div class="image-holder">
+						<img src="images/img02.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img03.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img04.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img01.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img02.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img03.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+				<div class="slide">
+					<div class="image-holder">
+						<img src="images/img04.png">
+					</div>
+					<div class="slide-hover">
+						<a class="eye" href="#"></a>
+						<a class="transfer" href="#"></a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="container">
-			<section class="testimonials">
-				<h2 class="title">Testimonials</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<div class="section-box">
+				<section class="testimonials">
+					<h3 class="title">Testimonials</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut nulla sapien, at aliquam erat. Sed vitae massa tellus. Aliquam commodo aliquam metus, sed iaculis nibh tempus id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam nec nisi in nisl euismod fringilla.</p>
 					<p><em>John Travis, CEO, DomainName.com</em></p>
 				</section>
 				<section class="clients">
-					<h2 class="title">Our clients</h2>
+					<h3 class="title">Our clients</h3>
 					<ul>
-						<li><a href=""><img src="" alt=""></a></li>
-						<li><a href=""><img src="" alt=""></a></li>
-						<li><a href=""><img src="" alt=""></a></li>
-						<li><a href=""><img src="" alt=""></a></li>
-						<li><a href=""><img src="" alt=""></a></li>
-						<li><a href=""><img src="" alt=""></a></li>
+						<li><a href=""><img src="images/partlogo01.png" alt=""></a></li>
+						<li><a href=""><img src="images/partlogo02.png" alt=""></a></li>
+						<li><a href=""><img src="images/partlogo03.png" alt=""></a></li>
+						<li><a href=""><img src="images/partlogo04.png" alt=""></a></li>
+						<li><a href=""><img src="images/partlogo05.png" alt=""></a></li>
+						<li><a href=""><img src="images/partlogo06.png" alt=""></a></li>
 					</ul>
 				</section>
 			</div>
-			<div class="download container">
+			<div class="download-holder">
 				<p>This is a clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template! </p>
-				<button class="download">Download PSD</button>
+				<a class="download" href="">Download PSD</a>
 			</div>
-			<footer>
-				<div class="container">
-					<section class="about-us">
-						<h2>About us</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </p>
-					</section>
-					<section class="explore">
-						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About us</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Portfolio</a></li>
-							<li><a href="">Blog</a></li>
-						</ul>
-					</section>
-					<section class="browse">
-						<ul>
-							<li><a href="">Careers</a></li>
-							<li><a href="">Press &amp; Media</a></li>
-							<li><a href="">Contact Us</a></li>
-							<li><a href="">Terms of Service</a></li>
-							<li><a href="">Privacy Policy</a></li>
-						</ul>
-					</section>
-					<section class="contact-us">
-						<address>
-							<em>BisLite Inc.</em> <br>
-							Always Street 265 <br>
-							0X - 125 - Canada <br>
-							Phone: <a href="tel:+9876543210">987-6543-210</a><br>
-							Fax: 987-6543-210
-						</address>
-					</section>
-					<section class="connect-with-us">
-						<ul>
-							<li><a href=""><img src="" alt="facebook"></a></li>
-							<li><a href=""><img src="" alt="dribble"></a></li>
-							<li><a href=""><img src="" alt="pinterest"></a></li>
-							<li><a href=""><img src="" alt="linkedin"></a></li>
-							<li><a href=""><img src="" alt="skype"></a></li>
-							<li><a href=""><img src="" alt="share"></a></li>
-						</ul>
-					</section>
+		</div>	
+		<footer>
+			<div class="container">
+				<section class="about-us">
+					<h3>About us</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. </p>
+				</section>
+				<section class="explore">
+					<h3>Explore</h3>
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">About us</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Portfolio</a></li>
+						<li><a href="">Blog</a></li>
+					</ul>
+				</section>
+				<section class="browse">
+					<h3>Browse</h3>
+					<ul>
+						<li><a href="">Careers</a></li>
+						<li><a href="">Press &amp; Media</a></li>
+						<li><a href="">Contact Us</a></li>
+						<li><a href="">Terms of Service</a></li>
+						<li><a href="">Privacy Policy</a></li>
+					</ul>
+				</section>
+				<section class="contact-us">
+					<h3>Contact us</h3>
+					<address>
+						<em>BisLite Inc.</em> <br>
+						Always Street 265 <br>
+						0X - 125 - Canada <br>
+					</address>
+					<dl>
+						<dt>Phone:</dt>
+						<dd><a href="tel:+9876543210">987-6543-210</a></dd>
+						<dt>Fax:</dt>
+						<dd>987-6543-210</dd>
+					</dl>
+				</section>
+				<section class="connect-with-us">
+					<h3>Connect with us</h3>
+					<ul>
+						<li><a href=""><img src="images/connect01.png" alt="facebook"></a></li>
+						<li><a href=""><img src="images/connect02.png" alt="dribble"></a></li>
+						<li><a href=""><img src="images/connect03.png" alt="pinterest"></a></li>
+						<li><a href=""><img src="images/connect04.png" alt="linkedin"></a></li>
+						<li><a href=""><img src="images/connect05.png" alt="skype"></a></li>
+						<li><a href=""><img src="images/connect06.png" alt="share"></a></li>
+					</ul>
+				</section>
+			</div>
+			<div class="container">
+				<div class="copyright">
+					<p>&copy; Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com. Client Logos are copyright and trademark of the respective owners / companies. </p>
 				</div>
-				<div class="container">
-					<section class="copyright">
-						<p>&copy; Copyright 2012 - BisLite Inc. All rights reserved. Some free icons used here are created by Brankic1979.com. 
-Client Logos are copyright and trademark of the respective owners / companies. </p>
-					</section>
-					<section class="logo">
-						
-					</section>
-				</div>
-			</footer>
-		</div>
-	</body>
-	</html>
+				<a class="logo-footer" href="#"><span>Bis</span>Lite</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
